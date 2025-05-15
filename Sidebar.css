@@ -1,0 +1,78 @@
+/* General Layout */
+.dashboard-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;  
+  background-color: #27445D;
+  color: white;
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.sidebar-header {
+  text-align: center;
+  font-size: 3rem;
+  color: #EFE9D5;
+}
+
+.user-profile {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.sidebar li {
+  padding: 25px 20px;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.sidebar li a {
+  font-weight: 500;
+  color: white;  
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar li a:hover {
+  color: #7076ec;   
+}
+
+
+.nav-icon {
+  margin-right: 10px;
+}
+
+.active {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+  color: rgb(255, 31, 31);  
+}
+
+.sidebar li:hover {
+  color: #27445D;
+}

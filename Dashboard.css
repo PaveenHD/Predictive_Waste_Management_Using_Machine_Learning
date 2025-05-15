@@ -1,0 +1,208 @@
+/* Main Content */
+.main-content {
+  margin-left: 250px;
+  padding: 10px;
+  width: calc(100% - 250px);
+  flex-grow: 1;
+  height: auto;
+  overflow-y: auto;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #497D74;
+  border-radius: 20px;
+  color: white;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.dashboard-header h2 {
+  margin: 0;
+  flex: 1;
+}
+
+.search-container {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard-search {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px 14px;
+  border: 2px solid #497D74;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  font-size: 14px;
+}
+
+.last-access {
+  font-size: 14px;
+  text-align: right;
+  flex: 1;
+}
+
+/* Logout Button */
+.logout-btn {
+  background: rgb(6, 85, 255);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: darkblue;
+}
+
+/* File Upload */
+.file-upload-section {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.file-dropbox {
+  border: 2px dashed #555;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.file-dropbox:hover {
+  background: #f0f0f0;
+}
+
+.upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #444;
+}
+
+.upload-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #71BBB2;
+}
+
+/* Status Cards */
+.status-section {
+  margin-top: 20px;
+}
+
+.status-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-style: normal;
+  width: 100%;
+  max-width: 250px;
+  height: 180px;
+  background: #EFE9D5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #000000;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card p {
+  margin-top: 10px;
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #4D55CC;
+}
+
+/* Footer */
+footer {
+  background-color: #497D74;
+  padding: 30px 0;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 100px;
+  text-align: center;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #f0f0f0;
+}
+
+footer h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: center;
+  color: #f0f0f0;
+}
+
+/* Responsive Layouts */
+@media (max-width: 1024px) {
+  .status-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .status-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-container {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .last-access {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .status-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .dashboard-search {
+    max-width: 100%;
+  }
+}
